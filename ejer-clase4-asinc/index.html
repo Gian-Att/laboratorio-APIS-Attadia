@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #search {
+            margin: 10px 0;
+            padding: 5px;
+            display: none;
+        }
+        .user-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .user-card img {
+            width: 60px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton">Mostrar Usuarios</button>
+    <input type="text" id="search" placeholder="Filtrar por nombre o apellido...">
+    <div id="users-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
